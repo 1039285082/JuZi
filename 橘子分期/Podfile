@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'BigWhiteWallet' do
+
+	pod 'SDWebImage', '>= 4.0.0'
+    pod 'SDCycleScrollView','~> 1.75'
+    pod 'MJExtension'
+    pod 'MBProgressHUD'
+    pod 'Masonry'
+    pod 'KSGuaidView'
+    pod 'AXWebViewController'
+  target 'BigWhiteWalletTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BigWhiteWalletUITests' do
+    inherit! :search_paths
+    # Pods for testing
+ 
+
+  end
+
+
+end

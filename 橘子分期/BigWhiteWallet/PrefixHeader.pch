@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  BigWhiteWallet
+//
+//  Created by mac on 2018/6/6.
+//  Copyright © 2018年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "BWWSingleUser.h"
+#import "BWWUserInformation.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <WebKit/WebKit.h>
+#import <MJExtension.h>
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import "UIView+CYExtenssion.h"
+
+#import "CYloginRegisterViewController.h"
+
+
+#define KScreenWidth ([[UIScreen mainScreen]bounds].size.width)
+
+#define KScreenHeight [[UIScreen mainScreen]bounds].size.height
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f]
+
+#define kBackGroundColor [UIColor colorWithRed:253/255.0f green:109/255.0f blue:12/255.0f alpha:1]
+#endif /* PrefixHeader_pch */
+

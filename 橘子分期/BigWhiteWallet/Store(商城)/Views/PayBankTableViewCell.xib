@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="PayBankTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cwI-p4-RE9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="126.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5C2-r6-lAd">
+                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Wfw-M0-sAZ"/>
+                            <constraint firstAttribute="height" constant="50" id="xBC-qa-L4X"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOc-qb-3AH">
+                        <rect key="frame" x="20" y="20" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Nfc-9J-9bs"/>
+                            <constraint firstAttribute="width" constant="40" id="OvU-FU-e9r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="** **** **** 8606" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8R-s8-EWT">
+                        <rect key="frame" x="73" y="76" width="300" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="KXn-Mb-aTa"/>
+                            <constraint firstAttribute="width" constant="300" id="ZEI-9e-y0g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="32"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工商银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjf-bH-rrX">
+                        <rect key="frame" x="73" y="25" width="80" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="6Ym-lG-tLZ"/>
+                            <constraint firstAttribute="height" constant="30" id="f96-xS-YCV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cwI-p4-RE9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3Gu-Xp-DUd"/>
+                    <constraint firstItem="cwI-p4-RE9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6BE-zp-b1C"/>
+                    <constraint firstItem="r8R-s8-EWT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="73" id="78r-UX-dK7"/>
+                    <constraint firstItem="DOc-qb-3AH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7Ck-ly-5Ux"/>
+                    <constraint firstItem="Cjf-bH-rrX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="9Ow-V0-1bH"/>
+                    <constraint firstAttribute="trailing" secondItem="cwI-p4-RE9" secondAttribute="trailing" id="DKq-80-uer"/>
+                    <constraint firstItem="5C2-r6-lAd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="FpL-xV-QNZ"/>
+                    <constraint firstAttribute="bottom" secondItem="r8R-s8-EWT" secondAttribute="bottom" constant="7.5" id="I3w-tD-MZR"/>
+                    <constraint firstItem="r8R-s8-EWT" firstAttribute="top" secondItem="Cjf-bH-rrX" secondAttribute="bottom" constant="21" id="PV5-ut-8ke"/>
+                    <constraint firstItem="DOc-qb-3AH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Y0u-qT-V3A"/>
+                    <constraint firstItem="Cjf-bH-rrX" firstAttribute="leading" secondItem="5C2-r6-lAd" secondAttribute="trailing" constant="8" id="gr3-KH-aVA"/>
+                    <constraint firstAttribute="bottom" secondItem="cwI-p4-RE9" secondAttribute="bottom" id="rSs-e9-H2c"/>
+                    <constraint firstItem="5C2-r6-lAd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="scB-2b-VOC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="backImageView" destination="cwI-p4-RE9" id="Lf4-h0-C09"/>
+                <outlet property="bankNameLabel" destination="Cjf-bH-rrX" id="nrW-4f-Oa1"/>
+                <outlet property="bankNumberLabel" destination="r8R-s8-EWT" id="UdH-rc-oI9"/>
+                <outlet property="firstIcon" destination="5C2-r6-lAd" id="ILC-En-MEp"/>
+                <outlet property="iconImage" destination="DOc-qb-3AH" id="XHr-Sy-evC"/>
+            </connections>
+            <point key="canvasLocation" x="-54" y="34.5"/>
+        </tableViewCell>
+    </objects>
+</document>
